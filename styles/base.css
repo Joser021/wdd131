@@ -6,6 +6,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 header h1 {
@@ -16,19 +17,24 @@ header h1 {
 
 .navbar {
     display: flex;
-    justify-content: space-around;
     background-color: var(--secondary-color);
-    padding: 2px;
+    justify-content: space-around;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
 }
 
 .navbar a {
-    padding: 25px;
+    display: block;
+    padding: 20px 50px;
     font-size: 25px;
     text-decoration: none;
     color: white;
 }
 
 .navbar a:hover {
-    padding-top: 20px;
-    border-top: 5px solid var(--primary-color);
+    text-decoration: overline var(--primary-color);
 }
+

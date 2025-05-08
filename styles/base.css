@@ -1,0 +1,26 @@
+:root {
+    --primary-color: #FFCA1A;
+    --secondary-color: #131313;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header h1 {
+    background-color: var(--primary-color);
+    padding: 20px;
+    text-align: center;
+}
+
+.navbar {
+    background-color: var(--secondary-color);
+    padding: 15px;
+}
+
+.navbar a {
+    font-size: 25px;
+    text-decoration: none;
+    color: white;
+}

@@ -35,6 +35,6 @@ header h1 {
 }
 
 .navbar a:hover {
-    text-decoration: underline var(--primary-color);
+    text-decoration: overline var(--primary-color);
 }
 

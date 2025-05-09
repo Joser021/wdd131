@@ -10,11 +10,13 @@
 }
 
 body {
+    background-color: #fcfcfc;
     min-width: 350px;
 }
 
 header h1 {
     background-color: var(--primary-color);
+    font-family: "Roboto Slab", Arial;
     padding: 20px;
     text-align: center;
 }
@@ -29,6 +31,7 @@ header h1 {
 
 .navbar a {
     display: block;
+    font-family: "Manrope", Arial;
     padding: 15px;
     font-size: 25px;
     text-decoration: none;
@@ -37,6 +40,7 @@ header h1 {
 }
 
 .navbar a:hover {
+    color: var(--primary-color);
     text-decoration: overline var(--primary-color);
 }
 
@@ -44,11 +48,15 @@ header h1 {
     border: 1px solid rgb(0, 0, 0, 0.1);
     border-radius: .9rem;
     max-width: 50rem;
-    margin: 50px;
+    height: 550px;
+    margin: 50px 5px 20px 20px;
     overflow: hidden;
+    grid-column: 2/3;
+    background-color: #f7f7f7;
 }
 
 h2 {
+    font-family: "Roboto Slab";
     background-color: var(--primary-color);
     text-align: center;
     padding: 15px;
@@ -71,11 +79,13 @@ h2 {
 }
 
 .myinf p {
+    font-family: "Manrope";
     margin-top: 20px;
 }
 
 
 .countryinf h3 {
+    font-family: "Roboto Slab", Arial;
     margin: 5px 25px;
     padding: 5px;
     max-width: 620px;
@@ -86,6 +96,8 @@ h2 {
 figure {
     float: left;
     margin: 20px;
+    font-family: "Manrope", Arial;
+    font-size: 13px;
 }
 
 .countryinf img {
@@ -95,4 +107,48 @@ figure {
 .countryinf p {
     max-width: 650px;
     padding-top: 20px;
+    font-family: "Manrope", Arial;
+    font-size: 14px;
+}
+
+.devresources {
+    max-width: 30rem;
+    height: 550px;
+    background-color: #f7f7f7;
+    border: 1px solid rgb(0, 0, 0, 0.1);
+    border-radius: .9rem;
+    overflow: hidden;
+    grid-column: 3/4;
+    margin: 50px 20px 20px 5px;
+}
+
+.devresources ul {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 40px;
+}
+
+.devresources a {
+    font-family: "Manrope", Arial;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.devresources a:hover {
+    color: var(--primary-color);
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 5fr 3fr 1fr;
+}
+
+.navfooter {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--primary-color);
+    border-top: 1px solid rgb(0, 0, 0, 0.1);
+    padding: 10px;
+    font-family: "Roboto Slab", Arial;
 }

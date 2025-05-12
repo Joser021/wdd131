@@ -1,0 +1,23 @@
+
+body {
+    font-family: "Roboto Slab", Arial;
+}
+
+header, main, footer {
+    max-width: 640px;
+    margin: 1rem auto;
+    border: 1px solid rgb(55, 102, 255);
+    padding: 1rem;
+    background-color: rgb(38, 177, 241);
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+}
+
+section {
+    background-color: white;
+    padding: 1rem;
+}

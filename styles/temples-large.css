@@ -1,72 +1,32 @@
-@media screen and (max-width: 1070px) {
-    #nav-menu {
-        display: none;
-        position: fixed;
-        gap: 0;
-        top: 70px;
-        flex-direction: column;
-        background-color: rgb(7, 7, 78);
-        width: 100%;
-        text-align: center;
-        transition: 0.3s;
-    }
 
-    #nav-menu.active {
-        display: flex;
-        /* flex-direction: column; */
-    }
-
-    a {
-    padding: 1.5rem;
-    display: block;
-    text-decoration: none;
-    color: #fff;
-    font-size: 22px;
-    font-family: "Manrope", Arial;
-}
-
-a:hover {
-    background-color: rgb(32, 32, 106);
-}
-    #menu {
-        display: block;
-        font-size: 2.6rem;
-        border: 0;
-        background: none;
-        color: #fff;
-        position: relative;
-        right: 15px;
-    }
-
-    #menu::before{
-        content: "☰";
-    }
-
-    figure img {
-        display: block;
-        margin: 0 auto;
-        width: 100%;
-        max-width: 350px;
-    }
-
-    figcaption {
-        text-align: center;
-        font-family: "Manrope", sans-serif;
-    }
-
-    figure {
-        padding: 15px;
-    }
-
+@media screen and (min-width: 750px) {
     .temples-pics {
         display: grid;
         grid-template-columns: 1fr 1fr;
-    }
+    } 
+    
 }
+@media screen and (min-width: 1250px) {
+    #menu {
+        display: none;
+    }
 
-@media screen and (max-width: 600px) {
+    #nav-menu {
+    display: flex;
+    position: static;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    width: auto;
+    font-size: 1.5rem;
+    }
+
     .temples-pics {
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
     }
 }

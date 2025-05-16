@@ -10,3 +10,10 @@ document.querySelectorAll("a").forEach(n => n.addEventListener("click", () => {
     hamburger.classList.remove("active")
     navMenu.classList.remove("active")
 }))
+
+const today = new Date()
+const year = document.querySelector("#currentYear")
+const LastModified = document.querySelector("#lastModified")
+
+year.innerHTML = today.getFullYear();
+LastModified.innerHTML = document.lastModified

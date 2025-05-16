@@ -1,11 +1,3 @@
-
-@media screen and (min-width: 750px) {
-    .temples-pics {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    } 
-    
-}
 @media screen and (min-width: 1250px) {
     #menu {
         display: none;

@@ -16,7 +16,7 @@ body {
 
 h1 {
     padding: 1.5rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     border-bottom: 1px solid rgba(0, 0, 0, 0.264);
     color: white;
     background-color: var(--tertiary-color);
@@ -41,7 +41,7 @@ main img {
 
 .country-weather {
     position: absolute;
-    top: 110%;
+    top: 90%;
     left: 70%;
 }
 
@@ -59,6 +59,7 @@ section {
     background-color: rgba(255, 255, 255, 0.8);
     padding: 30px 50px;
     position: relative;
+    text-align: center;
     box-shadow: 1px 1px 15px 3px rgb(44, 44, 44);
 }
 
@@ -75,9 +76,20 @@ section h2 {
     font-family: "Roboto Slab", Arial;
 }
 
-/* .country-weather h2::after {
+.country-weather h2::after {
+    content: "";
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    background-image: url("/images/weather.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+}
 
-} */
 
 footer {
     padding: 1.5rem;
@@ -86,4 +98,59 @@ footer {
     text-align: center;
     font-family: "Roboto Slab", Arial;
     font-size: 18px;
+}
+
+@media screen and (max-width: 500px){
+    body {
+        background-color: green;
+    }
+
+    h1 {
+        margin-bottom: 1rem;
+    }
+
+    main img {
+        position: static;
+
+    }
+
+    .country-weather, .country-data {
+        position: static;
+        top: auto;
+        left: auto;
+    }
+
+    section {
+        background-color: rgba(255, 255, 255, 0.945);
+        padding: auto auto;
+        margin: 1px auto;
+        position: static;
+        box-shadow: none;
+    }
+
+    section h2 {
+        background-color: transparent;
+        padding: 10px;
+        font-size: 30px;
+        box-shadow: none;
+        text-align: center;
+        margin: auto;
+    }
+
+    .country-weather h2::after {
+        content: "";
+        display: block;
+        width: 40px;
+        height: 40px;
+        margin: 30px auto;
+        padding: 20px;
+        background-image: url("/images/weather.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    footer {
+        font-size: 15px;
+    }
 }

@@ -102,7 +102,7 @@ footer {
 
 @media screen and (max-width: 500px){
     body {
-        background-color: green;
+        background-color: var(--primary-color);
     }
 
     h1 {

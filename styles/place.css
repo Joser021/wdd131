@@ -1,0 +1,87 @@
+:root {
+    --primary-color: #06912f; /* green */
+    --secondary-color: #ffca00; /* yellow */
+    --tertiary-color: #07008F; /* blue */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffca00;
+}
+
+h1 {
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.264);
+    color: white;
+    background-color: var(--tertiary-color);
+    font-family: "Roboto Slab", Arial;
+    font-size: 3rem;
+    text-align: center;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.767);
+}
+
+main img {
+    position: relative;
+    object-fit: cover;
+    object-position: center;
+}
+
+.country-data {
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    transform: translate(-30% -50%);
+}
+
+.country-weather {
+    position: absolute;
+    top: 110%;
+    left: 70%;
+}
+
+ul {
+    list-style: none;
+    padding: 15px;
+}
+
+li {
+    padding: 5px;
+}
+
+section {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 30px 50px;
+    position: relative;
+    box-shadow: 1px 1px 15px 3px rgb(44, 44, 44);
+}
+
+section h2 {
+    background-color: var(--secondary-color);
+    padding: 10px;
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    margin-top: -10px;
+    margin-left: -58px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+    box-shadow: 2px 5px 25px rgba(0, 0, 0, 0.444);
+}
+
+/* .country-weather h2::after {
+
+} */
+
+footer {
+    padding: 1.5rem;
+    background-color: var(--tertiary-color);
+    color: white;
+    text-align: center;
+    font-family: "Roboto Slab", Arial;
+    font-size: 18px;
+}

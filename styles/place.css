@@ -26,6 +26,10 @@ h1 {
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.767);
 }
 
+h1::after {
+    content: " ⚽";
+}
+
 .hero img {
     position: relative;
     object-fit: cover;

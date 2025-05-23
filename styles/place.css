@@ -26,11 +26,16 @@ h1 {
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.767);
 }
 
-main img {
+.hero img {
     position: relative;
     object-fit: cover;
     object-position: center;
     width: 100%;
+}
+
+.weather {
+    width: 50px;
+    margin-left: 20px;
 }
 
 .country-data {
@@ -76,20 +81,6 @@ section h2 {
     box-shadow: 2px 5px 25px rgba(0, 0, 0, 0.444);
     font-family: "Roboto Slab", Arial;
 }
-
-.country-weather h2::after {
-    content: "";
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    margin-bottom: 10px;
-    margin-left: 30px;
-    background-image: url("../images/weather.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    vertical-align: middle;
-}
-
 
 footer {
     padding: 1rem;
@@ -137,16 +128,10 @@ footer {
         margin: auto;
     }
 
-    .country-weather h2::after {
-        content: "";
+    .weather {
         display: block;
+        margin: 25px auto;
         width: 80px;
-        height: 80px;
-        margin: 30px auto;
-        background-image: url("../images/weather.svg");
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
     }
 
     footer {

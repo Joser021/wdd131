@@ -4,8 +4,8 @@ const temperature = document.querySelector("#temp")
 const windSpeed = document.querySelector("#wind")
 
 // country weather data
-const currentTemp = 20
-const currentSpeed = 10
+const currentTemp = 28
+const currentSpeed = 14
 
 // add data to the HTML
 temperature.textContent = currentTemp
@@ -17,8 +17,8 @@ const calculateWindChill = (temperature, speed) => {
 }
 
 // conditions to check the windChill content
-if (currentTemp <= 10 && CurrentSpeed > 4.8) {
-    const windChill = document.querySelector("#windChill")
+if (currentTemp <= 10 && currentSpeed > 4.8) {
+    windChill.textContent = calculateWindChill(currentTemp, currentSpeed) + " °C"
 } else {
     windChill.textContent = "N/A"
 }

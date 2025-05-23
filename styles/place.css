@@ -104,6 +104,10 @@ footer {
         margin-bottom: 1rem;
     }
 
+    h1::after {
+        content: "";
+    }
+
     main img {
         position: static;
 

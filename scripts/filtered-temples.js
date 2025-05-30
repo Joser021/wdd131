@@ -31,7 +31,7 @@ const temples = [
     dedicated: "2005, August, 7",
     area: 11500,
     imageUrl:
-    "/images/temples/aba-nigeria-temple.jpg"
+    "images/temples/aba-nigeria-temple.webp"
   },
   {
     templeName: "Manti Utah",

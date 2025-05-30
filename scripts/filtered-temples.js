@@ -1,6 +1,6 @@
 // gets the id the Element from the HTML. for the hamburger menu
-const hamburger = document.getElementById('menu');
-const navMenu = document.getElementById('nav-menu');
+const hamburger = document.querySelector('#ham-menu');
+const navMenu = document.querySelector('#nav-menu');
 
 // opens and closes the hamburger menu
 hamburger.addEventListener('click', () => {
@@ -127,19 +127,6 @@ const temples = [
 // function that creates the elements for the temples card
 createTempleCard(temples);
 
-const oldTemples = document.querySelector("#old")
-let noItems = document.querySelector("#no-items")
-
-oldTemples.addEventListener("click", () => {
-  let old = temples.filter(temple => parseInt(temple.location.slice(0, 4)) > 1900)
-  if (old.length === 0) {
-    createTempleCard(old)
-    noItems.innerHTML = "No temple older than 1900"
-  } else {
-    createTempleCard(old)
-  }
-});
-
 function createTempleCard(filteredTemples) {
   document.querySelector(".temples-pics").innerHTML = "";
   filteredTemples.forEach(temple => {
@@ -170,3 +157,57 @@ function createTempleCard(filteredTemples) {
     document.querySelector(".temples-pics").appendChild(card);
   })
 };
+
+document.querySelectorAll(".navbar a").forEach(link => {
+    link.addEventListener("click", e => {
+        e.preventDefault();
+        const category = link.textContent.trim().toLowerCase();
+
+        document.querySelectorAll(".navbar a").forEach(a => a.classList.remove("active"));
+        link.classList.add("active");
+    });
+});
+
+// reset the filter
+const home = document.querySelector("#home")
+
+home.addEventListener("click", () => {
+  createTempleCard(temples)
+})
+
+// filter the old temples
+const oldTemples = document.querySelector("#old")
+
+oldTemples.addEventListener("click", () => {
+  createTempleCard(temples.filter(temple => {
+    const dedicationYear = parseInt(temple.dedicated.split(",")[0]);
+    return dedicationYear < 1900;
+  }))
+});
+
+// filter the new temples
+const newTemples = document.querySelector("#new")
+
+newTemples.addEventListener("click", () => {
+  createTempleCard(temples.filter(temple => {
+    const dedicationYear = parseInt(temple.dedicated.split(",")[0]);
+    return dedicationYear > 2000}))
+})
+
+// filter the large temples
+const largeTemples = document.querySelector("#large")
+
+largeTemples.addEventListener("click", () => {
+  createTempleCard(temples.filter(temple => {
+    return temple.area > 90000
+  }))
+})
+
+// filter the small temples
+const smallTemples = document.querySelector("#small")
+
+smallTemples.addEventListener("click", () => {
+  createTempleCard(temples.filter(temple => {
+    return temple.area < 10000
+  }))
+})

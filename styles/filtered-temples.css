@@ -28,7 +28,7 @@ li {
 .logo {
     padding-left: 25px;
     color: white;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-family: "Roboto Slab";
 }
 
@@ -47,15 +47,8 @@ li {
     display: flex;
 }
 
-#no-items {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 5rem;
-    color: red;
-    font-size: 1rem;
-    font-weight: bold;
-    font-family: "Manrope";
+body {
+    background-color: rgb(242, 242, 255);
 }
 
 a {
@@ -63,12 +56,19 @@ a {
     display: block;
     text-decoration: none;
     color: #fff;
-    font-size: 22px;
+    font-size: 1.2rem;
     font-family: "Manrope", Arial;
 }
 
 a:hover {
     background-color: rgb(44, 44, 178);
+}
+
+.navbar a.active {
+    background-color: #fff;
+    color: var(--bgc);
+    font-weight: bold;
+    border: 1px solid #ccc;
 }
 
 img {
@@ -102,12 +102,15 @@ figure {
 .temples-pics {
     display: grid;
     grid-template-columns: 1fr; 
+    max-width: 600px;
+    margin: auto;
 } 
 
 h2 {
     text-align: center;
     font-family: "Roboto Slab", Arial;
-    padding: 15px;
+    padding: 2rem 0 1rem 0;
+    font-size: 2rem;
 }
 
 h3 {
@@ -117,18 +120,35 @@ h3 {
     margin: 3rem auto 1rem auto;
 }
 
-#menu {
+#ham-menu {
     display: block;
     font-size: 2.6rem;
     border: 0;
-    background: none;
     color: #fff;
     position: relative;
     right: 15px;
 }
 
-#menu::before{
-    content: "☰";
+#ham-menu.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+#ham-menu.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+#ham-menu.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
 }
 
 .nav-footer {

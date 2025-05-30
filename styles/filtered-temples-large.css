@@ -1,6 +1,14 @@
 @media screen and (min-width: 1250px) {
-    #menu {
+    #ham-menu {
         display: none;
+    }
+
+    #nav-menu a {
+        font-size: 1.5rem;
+    }
+
+    .logo {
+        font-size: 2;
     }
 
     #nav-menu {

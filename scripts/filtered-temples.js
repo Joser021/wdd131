@@ -39,7 +39,7 @@ const temples = [
     dedicated: "1888, May, 21",
     area: 74792,
     imageUrl:
-    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/manti-utah/400x250/manti-temple-768192-wallpaper.jpg"
+    "images/temples/manti-utah-temple.webp"
   },
   {
     templeName: "Payson Utah",
@@ -47,7 +47,7 @@ const temples = [
     dedicated: "2015, June, 7",
     area: 96630,
     imageUrl:
-    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/payson-utah/400x225/payson-utah-temple-exterior-1416671-wallpaper.jpg"
+    "images/temples/payson-utah-temple.webp"
   },
   {
     templeName: "Yigo Guam",
@@ -55,7 +55,7 @@ const temples = [
     dedicated: "2020, May, 2",
     area: 6861,
     imageUrl:
-    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/yigo-guam/400x250/yigo_guam_temple_2.jpg"
+    "images/temples/yigo-guam-temple.webp"
   },
   {
     templeName: "Washington D.C.",
@@ -63,7 +63,7 @@ const temples = [
     dedicated: "1974, November, 19",
     area: 156558,
     imageUrl:
-    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/washington-dc/400x250/washington_dc_temple-exterior-2.jpeg"
+    "images/temples/washington-dc-temple.webp"
   },
   {
     templeName: "Lima Perú",
@@ -71,7 +71,7 @@ const temples = [
     dedicated: "1986, January, 10",
     area: 9600,
     imageUrl:
-    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/lima-peru/400x250/lima-peru-temple-evening-1075606-wallpaper.jpg"
+    "images/temples/lima-peru-temple.webp"
   },
   {
     templeName: "Mexico City Mexico",
@@ -79,7 +79,47 @@ const temples = [
     dedicated: "1983, December, 2",
     area: 116642,
     imageUrl:
-    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
+    "images/temples/mexico-city-temple.webp"
+  },
+    {
+    templeName: "Atlanta Georgia",
+    location: "Atlanta, Georgia",
+    dedicated: "1983, June, 1",
+    area: 34500,
+    imageUrl:
+    "images/temples/atlanta-temple.webp"
+    },
+    {
+    templeName: "Bountiful Utah",
+    location: "Bountiful, Utah",
+    dedicated: "1995, January, 8",
+    area: 104000,
+    imageUrl:
+    "images/temples/bountiful-temple.webp"
+    },
+    {
+    templeName: "Campinas Brazil",
+    location: "Campinas, Brazil",
+    dedicated: "2002, May, 17",
+    area: 48100,
+    imageUrl:
+    "images/temples/campinas-brazil-temple.webp"
+    },
+    {
+    templeName: "Edmonton Alberta",
+    location: "Edmonton, Alberta",
+    dedicated: "1999, December, 11",
+    area: 10700,
+    imageUrl:
+    "images/temples/edmonton-alberta-temple.webp"
+    },
+    {
+    templeName: "jordan River Utah",
+    location: "Jordan River, Utah",
+    dedicated: "2018, May, 20",
+    area: 148236,
+    imageUrl:
+    "images/temples/jordan-river-temple.webp"
     },
     // Add more temple objects here...
 ];
@@ -98,7 +138,7 @@ function createTempleCard() {
 
     name.textContent = temple.templeName;
     location.innerHTML = `<span class="label">Location:</span> ${temple.location}`;
-    dedication.innerHTML = `<span class="label">Dedicated:</span> ${temple.dedication}`;
+    dedication.innerHTML = `<span class="label">Dedicated:</span> ${temple.dedicated}`;
     area.innerHTML = `<span class="label">Area:</span> ${temple.area} sq ft`;
     location.setAttribute("class", "inf")
     dedication.setAttribute("class", "inf")

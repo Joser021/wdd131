@@ -10,6 +10,7 @@
 
 header {
     background-color: var(--bgc);
+    box-shadow: 0px 5px 15px gray;
 }
 
 li {
@@ -79,11 +80,12 @@ img {
 figure {
     background-color: rgb(243, 243, 243);
     padding: 15px;
-    margin: 5px;
+    margin: 10px;
     border-radius: .5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
+    box-shadow: 5px 5px 10px gray;
 }
 
 .temples-pics {

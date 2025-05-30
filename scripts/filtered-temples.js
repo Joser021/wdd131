@@ -125,10 +125,24 @@ const temples = [
 ];
 
 // function that creates the elements for the temples card
-createTempleCard();
+createTempleCard(temples);
 
-function createTempleCard() {
-  temples.forEach(temple => {
+const oldTemples = document.querySelector("#old")
+let noItems = document.querySelector("#no-items")
+
+oldTemples.addEventListener("click", () => {
+  let old = temples.filter(temple => parseInt(temple.location.slice(0, 4)) > 1900)
+  if (old.length === 0) {
+    createTempleCard(old)
+    noItems.innerHTML = "No temple older than 1900"
+  } else {
+    createTempleCard(old)
+  }
+});
+
+function createTempleCard(filteredTemples) {
+  document.querySelector(".temples-pics").innerHTML = "";
+  filteredTemples.forEach(temple => {
     let card = document.createElement("figure");
     let name = document.createElement("h3");
     let location = document.createElement("p");

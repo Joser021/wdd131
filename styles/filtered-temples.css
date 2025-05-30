@@ -47,6 +47,17 @@ li {
     display: flex;
 }
 
+#no-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5rem;
+    color: red;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: "Manrope";
+}
+
 a {
     padding: 1.5rem;
     display: block;

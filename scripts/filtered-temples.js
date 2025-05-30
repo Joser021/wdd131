@@ -1,6 +1,8 @@
 // gets the id the Element from the HTML. for the hamburger menu
-const hamburger = document.querySelector('#ham-menu');
-const navMenu = document.querySelector('#nav-menu');
+const hamburger = document.querySelector("#ham-menu");
+const navMenu = document.querySelector("#nav-menu");
+const pageName = document.querySelector("#page-name")
+pageName.innerHTML = "Home"
 
 // opens and closes the hamburger menu
 hamburger.addEventListener('click', () => {
@@ -172,6 +174,7 @@ document.querySelectorAll(".navbar a").forEach(link => {
 const home = document.querySelector("#home")
 
 home.addEventListener("click", () => {
+  pageName.innerHTML = "Home"
   createTempleCard(temples)
 })
 
@@ -179,6 +182,7 @@ home.addEventListener("click", () => {
 const oldTemples = document.querySelector("#old")
 
 oldTemples.addEventListener("click", () => {
+  pageName.innerHTML = "Old temples"
   createTempleCard(temples.filter(temple => {
     const dedicationYear = parseInt(temple.dedicated.split(",")[0]);
     return dedicationYear < 1900;
@@ -189,6 +193,7 @@ oldTemples.addEventListener("click", () => {
 const newTemples = document.querySelector("#new")
 
 newTemples.addEventListener("click", () => {
+  pageName.innerHTML = "New Temples"
   createTempleCard(temples.filter(temple => {
     const dedicationYear = parseInt(temple.dedicated.split(",")[0]);
     return dedicationYear > 2000}))
@@ -198,6 +203,7 @@ newTemples.addEventListener("click", () => {
 const largeTemples = document.querySelector("#large")
 
 largeTemples.addEventListener("click", () => {
+  pageName.innerHTML = "Large Temples"
   createTempleCard(temples.filter(temple => {
     return temple.area > 90000
   }))
@@ -207,6 +213,7 @@ largeTemples.addEventListener("click", () => {
 const smallTemples = document.querySelector("#small")
 
 smallTemples.addEventListener("click", () => {
+  pageName.innerHTML = "Small Temples"
   createTempleCard(temples.filter(temple => {
     return temple.area < 10000
   }))

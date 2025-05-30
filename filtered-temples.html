@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A responsive image of temples with a hamburger menu, using HTML, CSS, JavaScript.">
+    <meta name="author" content="José Oliveira">
+
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+    <script src="scripts/filtered-temples.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+
+    <title>Temples Pictures</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">Temple Album</h1>
+                
+            <ul id="nav-menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Old</a></li>
+                <li><a href="#">New</a></li>
+                <li><a href="#">Large</a></li>
+                <li><a href="#">Small</a></li>
+            </ul>
+            <button id="menu">Menu</button>
+        </nav>
+    </header>
+    <main>
+        <h2>Home</h2>
+        <div class="temples-pics">
+        </div>
+    </main>
+    <footer class="nav-footer">
+        <p>©<span id="currentYear"></span> 🦅 José Oliveira 🦅 Brazil</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>

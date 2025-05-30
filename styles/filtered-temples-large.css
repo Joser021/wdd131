@@ -1,0 +1,24 @@
+@media screen and (min-width: 1250px) {
+    #menu {
+        display: none;
+    }
+
+    #nav-menu {
+    display: flex;
+    position: static;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    width: auto;
+    font-size: 1.5rem;
+    }
+
+    .temples-pics {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+}

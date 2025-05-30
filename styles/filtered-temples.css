@@ -28,7 +28,7 @@ li {
 .logo {
     padding-left: 25px;
     color: white;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-family: "Roboto Slab";
 }
 
@@ -103,6 +103,7 @@ figure {
     grid-template-columns: 1fr; 
     max-width: 600px;
     margin: auto;
+    padding: 0 2rem;
 } 
 
 h2 {

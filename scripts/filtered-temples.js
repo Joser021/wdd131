@@ -116,14 +116,13 @@ const temples = [
     "images/temples/edmonton-alberta-temple.webp"
     },
     {
-    templeName: "jordan River Utah",
+    templeName: "Jordan River Utah",
     location: "Jordan River, Utah",
     dedicated: "2018, May, 20",
     area: 148236,
     imageUrl:
     "images/temples/jordan-river-temple.webp"
     },
-    // Add more temple objects here...
 ];
 
 // function that creates the elements for the temples card

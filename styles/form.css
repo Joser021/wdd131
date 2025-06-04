@@ -101,6 +101,7 @@ textarea {
     h1 {
         margin-top: auto;
         border-radius: 0;
+        font-size: 1.5rem;
     }
 
     main {
@@ -108,7 +109,7 @@ textarea {
     }
     
     .pr1 {
-        width: 400px;
+        width: 300px;
         margin: auto;
     }
 }

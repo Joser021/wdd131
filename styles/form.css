@@ -112,3 +112,9 @@ textarea {
         margin: auto;
     }
 }
+
+@media screen and (max-width: 300px) {
+    .pr1 {
+        width: 250px;
+    }
+}

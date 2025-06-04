@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This page contains a simple form of a product review. HTML, CSS and JavaScript.">
+    <meta name="author" content="José Oliveira">
+
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+
+    <style>
+        .product-review label{
+            display: block;
+        }
+
+        .pr1 input[type="text"],
+        .pr1 input[type="date"],
+        .pr1 textarea,
+        .pr1 label,
+        .pr1 select{
+            display: block;
+        }
+
+        .ratingproduct {
+            display: flex;
+        }
+
+        .pr1 input[type="radio"]{
+            display: flex;
+            flex-direction: column;
+        }
+
+        
+    </style>
+    <title>Form Activity</title>
+</head>
+<body>
+    <main>
+        <h1>Product Review</h1>
+    <form action="review.html" method="get" class="pr1">
+        <label for="product">Product Name
+            <select name="product" id="product" required>
+                <option>Choose a Product ...</option>
+                <option value=""></option>
+            </select>
+        </label>
+
+        <div>Overall Rating</div>
+        <div class="ratingproduct">
+        <label for="1star">&star;<input type="radio" name="rating" id="1star" value="1star"></label>
+        <label for="2star">&star;&star;<input type="radio" name="rating" id="2star" value="2star"></label>
+        <label for="3star">&star;&star;&star;<input type="radio" name="rating" id="3star" value="3star"></label>
+        <label for="4star">&star;&star;&star;&star;<input type="radio" name="rating" id="4star" value="4star"></label>
+        <label for="5star">&star;&star;&star;&star;&star;<input type="radio" name="rating" id="5star" value="5star"></label>
+        </div>
+        
+        <label for="date">Date of Installation<input type="date" name="InstallationDate" id="date" required></label>
+
+        <div>Which features did you find in the product</div>
+        <div class="checkall">(Check all that apply)</div>
+        <label for="durability"><input type="checkbox" name="features" value="yes" id="durability">durability</label>
+        <label for="easeofuse"><input type="checkbox" name="features" value="yes" id="easeofuse">Ease of Use</label>
+        <label for="performance"><input type="checkbox" name="features" value="yes" id="performance">performance</label>
+        <label for="design"><input type="checkbox" name="features" value="yes" id="design">Design</label>
+
+        <label for="review">Written Review (Optional)<textarea name="review" id="review"></textarea></label>
+
+        <label for="name">Your Name (Optional)<input type="text" name="name" id="name"></label>
+
+        <input type="submit" value="post review" id="submit">
+    </form>
+    </main>
+    <footer id="navfooter">
+        <p>&copy;<span id="currentyear">🦅 José Oliveira 🦅 Brazil</span></p>
+        <p>Last Modification: <span id="lastmodified"></span></p>
+    </footer>
+</body>
+</html>

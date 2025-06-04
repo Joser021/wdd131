@@ -22,9 +22,6 @@
         <label for="product" class="selectProduct">Product Name*
             <select name="product" id="product" required>
                 <option value="" disabled selected>Choose a Product ...</option>
-                <option value="aba">cac</option>
-                <option value="aca">bab</option>
-                <option value="ada">dad</option>
             </select>
         </label>
 
@@ -42,12 +39,12 @@
         <div class="feature">Which features did you find in the product?<br><em>(Check all that apply)</em></div>
         <label for="durability"><input type="checkbox" name="features" value="yes" id="durability">Durability</label>
         <label for="easeofuse"><input type="checkbox" name="features" value="yes" id="easeofuse">Ease of Use</label>
-        <label for="performance"><input type="checkbox" name="features" value="yes" id="performance">performance</label>
+        <label for="performance"><input type="checkbox" name="features" value="yes" id="performance">Performance</label>
         <label for="design"><input type="checkbox" name="features" value="yes" id="design">Design</label>
 
-        <label for="review">Written Review (Optional)<textarea name="review" id="review" placeholder="Write your review here..."></textarea></label>
+        <label for="review">Written Review <span class="optional"></span><textarea name="review" id="review" placeholder="Write your review here..."></textarea></label>
 
-        <label for="name">Your Name (Optional)<input type="text" name="name" id="name"></label>
+        <label for="name">Your Name <span class="optional"></span><input type="text" name="name" id="name"></label>
 
         <input type="submit" value="Post Review" id="submit">
     </form>

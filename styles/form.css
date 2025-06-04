@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    max-width: 450px;
+    margin: auto;
+}
+
+h1 {
+    padding: 1rem;
+    margin: 1rem auto;
+    font-family: "Roboto Slab", Arial;
+    color: white;
+    text-align: center;
+    background-color: navy;
+    border-radius: 5px;
+}
+
+.pr1 {
+    padding: 1rem;
+    background-color: #e5e5e5;
+    border-radius: 5px;
+}
+
+.pr1 label, .overall, .feature {
+    display: block;
+    padding-top: 1rem;
+    font-size: .9rem;
+    font-family: "Manrope", Arial;
+}
+
+.pr1 input[type="text"],
+.pr1 input[type="date"],
+.pr1 select {
+    background-color: #fdfdfd;
+    display: block;
+    border: solid 1px #999;
+    border-radius: 5px;
+    padding: .75rem;
+    width: 100%;
+}
+
+.pr1 input[type="checkbox"] {
+    margin: auto .5rem;
+    transform: scale(1.8);
+}
+
+.pr1 input[type="radio"] {
+    transform: scale(1.8);
+    margin-top: .5rem;
+}
+
+.ratingproduct {
+    display: flex;
+}
+
+.ratingproduct label {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+textarea {
+    display: block;
+    resize: none;
+    width: 100%;
+    height: 200px;
+    font-family: "Manrope", Arial;
+    padding: 5px;
+}
+
+.pr1 input[type="submit"] {
+    margin-top: 1rem;
+    width: 100%;
+    height: 50px;
+    font-family: "Roboto Slab", Arial;
+    font-size: 25px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background: linear-gradient(to bottom, navy, rgb(0, 0, 212), navy);
+}
+
+.pr1 input[type="submit"]:hover {
+    background: linear-gradient(to bottom, darkgreen, rgb(0, 175, 0), darkgreen);
+}
+
+#navfooter {
+    background-color: navy;
+    color: white;
+    font-family: "Roboto Slab", Arial;
+    text-align: center;
+    padding: .5rem;
+    margin-top: 2rem;
+}

@@ -156,3 +156,39 @@ h2 {
     text-align: center;
     font-size: 1rem;
 }
+
+@media screen and (max-width: 600px) {
+    main {
+        display: block;
+    }
+
+    section {
+        width: 400px; 
+    }
+    
+    .desktop {
+        width: 350px;
+    }
+    
+    .mobile {
+        width: 200px;
+    }
+
+    .color { 
+        width: 5rem;
+        height: 5rem;
+    }
+
+    .color-schema {
+    grid-template-rows: 2rem 7rem;
+    }
+
+    .color-schema ul{
+        margin-left: auto;
+        font-size: 13px;
+    }
+
+    .content {
+        place-items: center;
+    }
+}

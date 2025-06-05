@@ -29,7 +29,7 @@ main {
 section {
     width: 490px;
     height: 350px;
-    padding: 1.5rem;
+    padding: .75rem;
     background-color: rgb(230, 230, 230);
     border-radius: 5px;
     box-shadow: 3px 3px 15px lightgray;
@@ -59,6 +59,10 @@ ul {
     justify-content: center;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 2rem 10rem;
+}
+
+.color-schema li:first-of-type {
+    list-style-type: none;
 }
 
 h2 {

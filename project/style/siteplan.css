@@ -158,16 +158,34 @@ h2 {
 }
 
 @media screen and (max-width: 600px) {
+    h1 {
+        font-size: 25px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 15px;
+    }
+
     main {
         display: block;
     }
 
     section {
-        width: 400px; 
+        width: 300px;
+        height: 400px;
     }
     
+    .test {
+        display: flex;
+        align-items: center;
+    }
+
     .desktop {
-        width: 350px;
+        width: 300px;
     }
     
     .mobile {
@@ -180,7 +198,8 @@ h2 {
     }
 
     .color-schema {
-    grid-template-rows: 2rem 7rem;
+        display: flex;
+        flex-direction: column;
     }
 
     .color-schema ul{
@@ -190,5 +209,17 @@ h2 {
 
     .content {
         place-items: center;
+    }
+
+    figcaption {
+        font-size: 12px;
+    }
+
+    .navfooter p {
+        font-size: 12px;
+    }
+
+    .main-inf p {
+        font-size: 13px;
     }
 }

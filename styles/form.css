@@ -141,4 +141,12 @@ textarea {
         margin: 1rem auto;
         padding: 15px;
     }
+
+    .pr1 input[type="checkbox"] {
+        transform: scale(1);
+    }
+
+    .pr1 input[type="radio"] {
+        transform: scale(1);
+    }
 }

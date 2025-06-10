@@ -143,10 +143,10 @@ textarea {
     }
 
     .pr1 input[type="checkbox"] {
-        transform: scale(1);
+        transform: scale(1.3);
     }
 
     .pr1 input[type="radio"] {
-        transform: scale(1);
+        transform: scale(1.3);
     }
 }

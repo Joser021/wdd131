@@ -37,7 +37,8 @@ body {
     width: 80px;
     margin-left: 1rem;
 }
-.navbar a {
+
+.navbar li a {
     display: block;
     text-decoration: none;
     padding: 25px 1rem;
@@ -48,8 +49,12 @@ body {
     font-size: 1.5rem;
 }
 
-.navbar a:hover {
+.navbar li a:hover {
     background-color: #E8B600;
+}
+
+#ham-menu {
+    display: none;
 }
 
 figure {
@@ -57,10 +62,10 @@ figure {
     margin: 5rem;
 }
 
-.pancake-img {
+.recipe-img {
     padding: 2rem 0 1rem 0;
     background-color: var(--quarternary-color);
-    margin: 2rem 0;
+    margin: 0 0 2rem 0;
 }
 
 figure img {
@@ -196,6 +201,7 @@ article h3 {
     background-color: var(--quarternary-color);
     justify-content: space-between;
 }
+
 .suggestion-logo {
     display: flex;
     text-align: center;
@@ -243,6 +249,7 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background-color: rgb(96, 96, 96);
 }
+
 .learning {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -290,11 +297,70 @@ input[type="submit"]:hover {
     font-size: 1.2rem;
 }
 
+#backButton {
+    padding: .8rem;
+    color: white;
+    font-family: "Roboto Slab", Arial;
+    font-weight: bold;
+    background-color: rgb(0, 0, 129);
+    border: none;
+    border-radius: 5px;
+    margin: 1rem;
+    box-shadow: 3px 3px 10px gray;
+}
+
+#backButton:hover {
+    background-color: rgb(0, 0, 167) ;
+}
+
 @media screen and (max-width: 600px) {
     .nav-links {
-    display: none;
+        display: none;
+        position: fixed;
+        top: 80px;
+        flex-direction: column;
+        background-color: #f3be00;
+        width: 100%;
+        transition: 0.3s;
     }
 
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        width: 100%;
+    }
+
+    #ham-menu {
+        display: block;
+        position: relative;
+        top: 25px;
+        right: 15px;
+    }
+
+    .bar {
+        display: block;
+        width: 30px;
+        height: 3.3px;
+        margin: 5px auto;
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s;
+        background-color: black;
+    }
+
+    #ham-menu.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    #ham-menu.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    
+    #ham-menu.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    
     .recipes-container img {
     width: 120px;
     }
@@ -308,7 +374,7 @@ input[type="submit"]:hover {
         font-size: 15px;
         padding: 2rem 0 4rem 0;
     }
-    /* testing */
+
     .recipes-container p {
         width: 250px;
         text-align: center;
@@ -348,10 +414,110 @@ input[type="submit"]:hover {
         width: 18px;
     }
 
-    /* .recipes-container {
-        display: block;
+    /* learnig page */
+    .learning {
+        grid-template-columns: 300px;
+        margin: auto;
+        justify-content: center;
+    }
+    
+    .learning-recipes {
+        text-align: center;
         width: 280px;
-        margin: 1rem auto;
         padding: 1rem;
-    } */
+        border-radius: 5px;
+        background-color: var(--secondary-color);
+        box-shadow: 3px 3px 10px gray;
+        margin: .5rem auto;
+    }
+    
+    .suggestion-form {
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+
+    .suggestion-logo {
+        font-size: 2rem;
+        padding: 2rem;
+        width: 100%;
+    }
+
+    .suggestion {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .suggestion label, input[type="submit"] {
+        width: 90%;
+        margin: .5rem auto;
+    }
+
+    input[type="text"],
+    input[type="email"] {
+        font-size: 1rem;
+    }
+
+    input[type="submit"] {
+        font-size: 1.2rem;
+        cursor: pointer;
+    }
+
+    /* recipes page */
+    .container h2 {
+        font-size: 1.3rem;
+    }
+
+    section {
+        padding: 1rem;
+        width: 280px;
+        margin: auto;
+        grid-column: auto;
+        grid-row: 1fr 1fr 1fr;
+    }
+
+    article {
+        margin: 1rem auto;
+        width: 280px;
+        height: 500px;
+        padding: 1rem;
+    }
+
+    article h3 {
+        font-family: "Roboto Slab", Arial;
+        margin-bottom: 1rem;
+    }
+
+    .ingredients {
+        grid-column: auto;
+        margin-bottom: .25rem ;
+    }
+
+    .tips {
+        margin-top: .25rem ;
+        grid-column: auto;
+        grid-row: auto;
+    }
+
+    .tips li, .ingredients li {
+        margin-left: 1rem;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;        
+    }
+
+    figure {
+        text-align: center;
+        margin: 5rem;
+    }
+
+    .recipe-img figcaption {
+        font-size: 10px;
+    }
+    
+    figure img {
+        width: 280px;
+    }
 }

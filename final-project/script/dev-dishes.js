@@ -10,32 +10,32 @@ lastModified.innerHTML = document.lastModified;
 const recipesLearn = [
     {
         recipeName: "Brownie",
-        recipeDescription: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab blanditiis nesciunt rerum voluptatum necessitatibus cumque distinctio voluptas, at earum iste.",
+        recipeDescription: "A brownie is a rich, chocolatey dessert with a dense, fudgy texture, often enhanced with nuts or chocolate chips, and cut into squares for a sweet, indulgent treat.",
         imageURL: "images/brownie.webp"
     },
     {
         recipeName: "Brazilian cheese bread",
-        recipeDescription: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab blanditiis nesciunt rerum voluptatum necessitatibus cumque distinctio voluptas, at earum iste.",
+        recipeDescription: "A chewy, gluten-free snack made from tapioca flour and cheese, with a crispy exterior and a soft, cheesy interior. It's a popular treat in Brazil, often served warm.",
         imageURL: "images/brazilian-cheese-bread.webp"
     },
     {
         recipeName: "Burrito",
-        recipeDescription: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab blanditiis nesciunt rerum voluptatum necessitatibus cumque distinctio voluptas, at earum iste.",
+        recipeDescription: "A flour tortilla wrapped around fillings like rice, beans, meat, and cheese, creating a portable, hearty meal that’s packed with flavor and texture.",
         imageURL: "images/burritos.webp"
     },
     {
         recipeName: "Carrot Cake Recipe",
-        recipeDescription: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab blanditiis nesciunt rerum voluptatum necessitatibus cumque distinctio voluptas, at earum iste.",
+        recipeDescription: "A moist, spiced cake made with grated carrots, often topped with rich cream cheese frosting, balancing sweetness with warm spices like cinnamon.",
         imageURL: "images/carrot-cake.webp"
     },
     {
         recipeName: "Feijoada",
-        recipeDescription: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab blanditiis nesciunt rerum voluptatum necessitatibus cumque distinctio voluptas, at earum iste.",
+        recipeDescription: "A flavorful Brazilian stew made with black beans, pork, and beef, slow-cooked to perfection and served with rice, collard greens, and orange slices.",
         imageURL: "images/feijoada.webp"
     },
     {
         recipeName: "Lemon Mousse",
-        recipeDescription: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab blanditiis nesciunt rerum voluptatum necessitatibus cumque distinctio voluptas, at earum iste.",
+        recipeDescription: "A light, airy dessert made with lemon, cream, and sugar, offering a refreshing balance of sweet and tangy flavors with a smooth, velvety texture.",
         imageURL: "images/lemon-mousse.webp"
     }
 ];
@@ -77,13 +77,13 @@ const learned = [
     },
     {
         recipeName: "Cookies",
-        description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab blanditiis nesciunt rerum voluptatum necessitatibus cumque distinctio voluptas, at earum iste.",
+        description: "Cookies are sweet, baked treats made from dough that typically include ingredients like flour, sugar, butter, and eggs. They come in various shapes and flavors, often with add-ins like chocolate chips, nuts, or dried fruit. Known for their crisp or chewy texture, cookies are a popular snack enjoyed worldwide.",
         imageURL: "images/cookies.webp",
         URL: "recipes/cookies.html",
     },
     {
         recipeName: "Strogonoff",
-        description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab blanditiis nesciunt rerum voluptatum necessitatibus cumque distinctio voluptas, at earum iste.",
+        description: "Strogonoff is a creamy, savory dish made with tender pieces of meat, usually beef or chicken, cooked in a rich sauce of sour cream, mustard, and ketchup. Often served with rice and bathed in the flavorful sauce, it's a comforting, hearty meal known for its smooth texture and tangy taste.",
         imageURL: "images/strogonoff.webp",
         URL: "recipes/strogonoff.html",
     }
@@ -120,5 +120,31 @@ function recipesLearned() {
     });
 };
 
+// opens and closes the hamburger menu
+const hamburger = document.querySelector("#ham-menu");
+const navLinks = document.querySelector(".nav-links");
 
+hamburger.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+    hamburger.classList.toggle("active");
+});
 
+document.querySelectorAll(".nav-links a").forEach(n => n.addEventListener("click", () => {
+    hamburger.classList.remove("active");
+    navLinks.classList.remove("active");
+}));
+
+// back to the previous page
+goPreviousPage()
+function goPreviousPage() {
+    const prevButton = document.querySelector("#backButton");
+    if (!prevButton) return;
+
+    prevButton.addEventListener("click", () => {
+        if (document.referrer) {
+            window.history.back();
+        } else {
+            window.location.href = "index.html"
+        }
+    });
+};

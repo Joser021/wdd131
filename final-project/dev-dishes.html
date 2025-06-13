@@ -22,12 +22,15 @@
         <ul class="nav-links">
             <li><a href="#">Home</a></li>
             <li><a href="recipes.html">Recipes</a></li>
-            <li><a href="#">Learning</a></li>
-            <li><a href="#">About</a></li>
+            <li><a href="learning.html">Learning</a></li>
+            <li><a href="about.html">About</a></li>
         </ul>
     </nav>
     <main>
-        <h1>Home</h1>
+        <div class="recipes-header">
+            <h1>Home</h1>
+            <p><strong>Welcome!</strong><br>This is a site about my recipes.</p>
+        </div>
         <figure class="pancake-img">
             <img src="images/pancake.webp" alt="Pancake" loading="lazy">
             <figcaption><em>Pancake</em></figcaption>
@@ -35,11 +38,31 @@
         <div class="container">
             <section class="Pancake recipe">
                 <h2>Pancake Recipe</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim corrupti itaque voluptatum fugiat ducimus mollitia officiis harum natus perspiciatis excepturi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere enim voluptas distinctio saepe, obcaecati vel pariatur dignissimos soluta cum odio reprehenderit, tempora earum debitis reiciendis quia ipsam quod similique dolorum totam sapiente provident aperiam animi sed vero! Eius ipsam repellendus nesciunt nam facilis corrupti voluptates esse laboriosam dolorem tenetur! Similique.  Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, soluta suscipit. Facere at, voluptatem unde natus iure dolorem illo eius! Dolore veniam eaque tempore placeat esse consectetur voluptatum voluptates consequatur maxime, inventore cupiditate sed, magnam error a doloribus incidunt rerum dolores aliquam dolorum assumenda dolorem. Debitis dolore quisquam optio totam deleniti, ad doloribus quia, modi quibusdam fuga voluptas facere mollitia quis incidunt exercitationem accusantium nulla ab ullam, maiores eos assumenda voluptatum possimus nemo sed! Optio ipsa temporibus eos neque cum quis, aliquid praesentium est sunt quod aliquam quam possimus magni aperiam laudantium officia doloribus tempora? Soluta quae reiciendis provident architecto?
+                <p>
+                    In a large bowl, whisk together the flour, baking powder, salt, and sugar.<br> In another bowl, beat the egg and then add the milk, melted butter, and vanilla extract if using.<br> Pour the wet ingredients into the dry ingredients and gently stir until just combined — it’s okay if the batter is a little lumpy, don’t overmix.<br> Heat a non-stick skillet or griddle over medium heat and lightly grease it with butter or oil.<br> Pour about 1/4 cup of batter per pancake onto the skillet.<br> Cook until bubbles form on the surface and the edges look set, about 2–3 minutes, then flip and cook the other side for another 1–2 minutes or until golden brown.<br> Remove from the skillet and keep warm while you cook the remaining pancakes.
                 </p>
             </section>
-            <article><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate ut repudiandae corporis repellat odit id esse asperiores perspiciatis, unde ex, provident recusandae. Atque aperiam suscipit cupiditate eveniet nisi ex eligendi nihil voluptatibus vel! Aliquid porro molestias reprehenderit vero. Commodi adipisci, iste accusamus reiciendis consectetur blanditiis cum neque alias repudiandae nemo?</p></article>
-            <article><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate ut repudiandae corporis repellat odit id esse asperiores perspiciatis, unde ex, provident recusandae. Atque aperiam suscipit cupiditate eveniet nisi ex eligendi nihil voluptatibus vel! Aliquid porro molestias reprehenderit vero. Commodi adipisci, iste accusamus reiciendis consectetur blanditiis cum neque alias repudiandae nemo?</p></article>
+            <article class="ingredients">
+                <h3>Ingredients</h3>
+                <ul>
+                    <li>1 1/2 cups (190 g) all-purpose flour</li>
+                    <li>3 1/2 teaspoons baking powder</li>
+                    <li>1/2 teaspoon salt</li>
+                    <li>1 tablespoon sugar</li>
+                    <li>1 1/4 cups (300 ml) milk</li>
+                    <li>1 large egg</li>
+                    <li>3 tablespoons unsalted butter, melted</li>
+                    <li>1 teaspoon vanilla extract (optional)</li>
+                </ul>
+            </article>
+            <article class="tips">
+                <h3>Tips</h3>
+                <ul>
+                    <li>Let the batter rest for 5–10 minutes before cooking for fluffier pancakes.</li>
+                    <li>Don’t press down on the pancakes while cooking</li>
+                    <li>Serve with maple syrup, fresh fruits, whipped cream, or your favorite toppings.</li>
+                </ul>
+            </article>
         </div>
 
     </main>
@@ -50,7 +73,7 @@
             <a href="https://www.x.com"><img src="images/twitter-x.svg" alt="twitter-x logo"></a>
         </div>
         <p>&copy;<span class="currentyear"></span> 🦅 José Oliveira 🦅 Brazil</p>
-        <p></p>
+        <p>Last Modification: <span class="lastModified"></span></p>
     </footer>
 </body>
 </html>

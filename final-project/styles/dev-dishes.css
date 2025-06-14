@@ -40,17 +40,11 @@ body {
 
 .banner h2 {
     font-family: var(--primary-font);
+    font-size: 5rem;
 }
 
 .first h2 {
-    font-size: 5rem;
     margin: 3rem 1rem 1rem 3rem;
-}
-
-.first p {
-    margin: auto 5rem;
-    width: 800px;
-    font-size: 1.5rem;
 }
 
 .second h2 {
@@ -58,21 +52,16 @@ body {
     margin: 1rem 1rem 1rem 3rem;
 }
 
-.second p {
-    margin: auto 5rem;
+.banner  p {
     width: 800px;
-    font-size: 1.3rem;
+    margin: auto 5rem;
+    font-size: 1.5rem;
 }
 
 .third {
     align-items: center;
     justify-content: space-evenly;
     text-align: center;
-}
-
-.third h2 {
-    font-size: 5rem;
-    color: black;
 }
 
 .third span {
@@ -486,6 +475,44 @@ input[type="submit"]:hover {
         margin: .2rem .3rem;
         width: 18px;
     }
+    /* home page banners */
+    .banner {
+        padding: 1rem;
+        display: block;
+        text-align: center;
+    }
+    
+    .banner img {
+        width: 250px;
+    }
+
+    .banner h2 {
+        font-size: 1.3rem;
+        margin: 0;
+    }
+
+    .second h2 {
+        font-size: 1.1rem;
+    }
+
+    .banner p {
+        margin: auto ;
+        width: 250px;
+        font-size: .8rem;
+    }
+
+    .first p {
+        margin-bottom: 1.5rem;
+    }
+
+    .third span {
+        text-shadow: 
+            1px 1px 0px black,
+            -1px -1px 0px black,
+            1px -1px 0px black,
+            -1px 1px 0px black;
+        color: var(--primary-color);
+    }
 
     /* learnig page */
     .learning {
@@ -524,6 +551,11 @@ input[type="submit"]:hover {
     .suggestion label, input[type="submit"] {
         width: 90%;
         margin: .5rem auto;
+    }
+
+    .suggestion label[for="suggestion"],
+    .suggestion label[for="email"] {
+        font-size: 1rem;
     }
 
     input[type="text"],

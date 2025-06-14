@@ -154,3 +154,25 @@ function goPreviousPage() {
         }
     });
 };
+
+countSurvey()
+
+// localStorage
+function countSurvey() {
+    const validation = document.querySelector(".review-site");
+    if (!validation) return;
+
+    const visitDisplay = document.querySelector(".counter");
+
+    let visitNumbers = Number(window.localStorage.getItem("visits-ls"));
+
+    if (visitNumbers !== 0) {
+        visitDisplay.textContent = `${visitNumbers + 1} Times.`;
+    } else {
+        visitDisplay.textContent = "for the first time."
+    }
+
+    visitNumbers++;
+
+    localStorage.setItem("visits-ls", visitNumbers);
+};

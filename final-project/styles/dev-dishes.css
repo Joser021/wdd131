@@ -81,6 +81,7 @@ body {
 
 .navbar img {
     width: 80px;
+    height: 80px;
     margin-left: 1rem;
 }
 
@@ -187,6 +188,7 @@ article h3 {
 .social-midias img {
     margin: .2rem .3rem;
     width: 20px;
+    height: 20px;
 }
 
 /* recipes page */
@@ -238,6 +240,7 @@ article h3 {
     grid-row: 1/3;
     border-radius: 5px;
     width: 200px;
+    height: 200px;
     box-shadow: 3px 3px 10px gray;
 }
 
@@ -331,6 +334,7 @@ input[type="submit"]:hover {
 
 .learning-recipes img{
     width: 250px;
+    height: 250px;
     border-radius: 5px;
     box-shadow: 3px 3px 10px rgba(128, 128, 128, 0.507);
 }
@@ -450,6 +454,11 @@ input[type="submit"]:hover {
         padding: 1rem;
     }
 
+    .learning-recipes img{
+        width: 200px;
+        height: 200px;
+    }
+
     .recipes-container h2 {
         align-content: center;
         font-family: "Roboto Slab";
@@ -474,6 +483,7 @@ input[type="submit"]:hover {
     .social-midias img {
         margin: .2rem .3rem;
         width: 18px;
+        height: 18px;
     }
     
     /* home page banners */
@@ -533,6 +543,8 @@ input[type="submit"]:hover {
     }
     
     .suggestion-form {
+        min-width: 300px;
+        min-height: 200px;
         flex-direction: column;
         margin-top: 1rem;
     }
@@ -541,6 +553,7 @@ input[type="submit"]:hover {
         font-size: 2rem;
         padding: 2rem;
         width: 100%;
+        height: 200px;
     }
 
     .suggestion {

@@ -155,7 +155,7 @@ function goPreviousPage() {
     });
 };
 
-countSurvey()
+countSurvey()   
 
 // localStorage
 function countSurvey() {

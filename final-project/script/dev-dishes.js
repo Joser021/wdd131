@@ -86,6 +86,12 @@ const learned = [
         description: "Strogonoff is a creamy, savory dish made with tender pieces of meat, usually beef or chicken, cooked in a rich sauce of sour cream, mustard, and ketchup. Often served with rice and bathed in the flavorful sauce, it's a comforting, hearty meal known for its smooth texture and tangy taste.",
         imageURL: "images/strogonoff.webp",
         URL: "recipes/strogonoff.html",
+    },
+    {
+        recipeName: "Pancakes",
+        description: "A pancake is a flat, round cake made from a batter of flour, eggs, milk, and baking powder, cooked on a griddle or frying pan. It's usually soft inside and golden brown outside, often served with toppings like syrup, fruit, or butter, and enjoyed as a breakfast dish.",
+        imageURL: "images/pancakes.webp",
+        URL: "recipes/pancakes.html",
     }
 ];
 

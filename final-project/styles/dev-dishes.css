@@ -478,6 +478,7 @@ input[type="submit"]:hover {
     .navfooter p {
         font-family: "Roboto Slab", Arial;
         font-size: 13px;
+        min-height: 10px;
     }
 
     .social-midias img {
@@ -525,7 +526,7 @@ input[type="submit"]:hover {
         color: var(--primary-color);
     }
 
-    /* learnig page */
+    /* learning page */
     .learning {
         grid-template-columns: 300px;
         margin: auto;
@@ -637,5 +638,16 @@ input[type="submit"]:hover {
     
     figure img {
         width: 280px;
+    }
+
+    /* review page */
+    .review-site {
+        width: 280px;
+        height: 300px;
+    }
+
+    .review-site p {
+        font-size: 1rem;
+        text-align: center;
     }
 }
